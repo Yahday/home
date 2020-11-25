@@ -31,7 +31,7 @@ nav a:hover, a:focus {
 }
 
 /* -- Contenido -- */
-@media screen and (min-width: 700px) {  
+@media screen and (min-width: 769px) {  
     body > main {
 		display: flex;
 		flex-wrap: wrap;
@@ -51,9 +51,9 @@ section {
 /* -- Principal -- */
 figure:nth-of-type(1) {
     margin-top: 2rem;
-    height: calc( 70vh - 2rem);
+    height: calc( 65vh - 2rem);
     width: 100%;
-    background: radial-gradient(50% 50% at 50% 50%, #08233D 0%, #041B30 100%);
+    background: radial-gradient(50% 50% at 50% 50%, #0e2b46 0%, #041B30 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,7 +64,7 @@ figure:nth-of-type(1) {
     text-align: center;
 }
 
-.brand h1 {
+.brand h2 {
     letter-spacing: 0.25em;
     font-size: calc(3.2vmin + 5.2vmax);
     border: 6px solid #C9C9C9;
@@ -85,17 +85,17 @@ figure:nth-of-type(1) {
 }
 
 .intro {
-    height: 30vh;
+    height: 35vh;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
 }
 
 .intro-prin {
     display: none;
 }
 
-.intro h2 {
+.intro h1 {
     font-size: calc(1.5vmin + 3vmax);
     text-align: right;
     border-right: 2px solid rgb(54, 54, 54);
@@ -104,12 +104,12 @@ figure:nth-of-type(1) {
 }
 
 .intro p {
-    font-size: calc(0.8vmin + 1.1vmax);
+    font-size: calc(1.1vmin + 1.4vmax); 
     text-align: right;
     padding-right: 1rem;
 }
 
-@media screen and (min-width: 700px) {    
+@media screen and (min-width: 769px) {    
 	figure {
 		width: calc( 50% + 1px);
 		height: 100vh;
@@ -147,6 +147,10 @@ figure:nth-of-type(1) {
         height: 100vh;
         justify-content: space-between;
         padding-top: 20vh;
+    }
+
+    .intro p {
+        font-size: calc(0.8vmin + 1.1vmax);
     }
 
     .intro-prin {
@@ -196,8 +200,27 @@ figure:nth-of-type(1) {
         background-color: rgba(54, 54, 54, 0.13);
         transform: scale(1.1);
     }
-    
-	figure:nth-of-type(2n) {
+}
+
+h3 {
+    font-size: calc(1.2vmin + 2.6vmax);
+    text-align: center;
+    margin: 1rem;
+}
+
+.pwa p {
+    font-size: calc(1.1vmin + 1.4vmax);
+    text-align: justify;
+}
+
+.pwa img{
+    display: block;
+    width: 50%;
+    margin: 1.5rem auto;
+}
+
+@media screen and (min-width: 769px) {
+    figure:nth-of-type(2n) {
 		margin: 0 0 10vh auto;
 		box-shadow: -4px -4px 8px rgba(0,0,0,.4);
     }
@@ -206,6 +229,41 @@ figure:nth-of-type(1) {
 		margin: 0 auto 10vh 0;
 		box-shadow: 4px -4px 8px rgba(0,0,0,.4);
     }
+
+    .pwa {
+        padding-top: 6rem;
+    }
+
+    .pwa div{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .pwa p {
+        margin-top: 2rem;
+        font-size: calc(0.8vmin + 1.1vmax);
+    }
+
+    .pwa img {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .re-order img {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        order: 1;
+    }
+
+    .re-order h3 {
+        order: 2;
+    }
+
+    .re-order p {
+        order: 3;
+    }
     
 	figure:last-of-type,
 	section:last-of-type {
@@ -213,12 +271,19 @@ figure:nth-of-type(1) {
 	}
     
 	figure img {
-		min-width: 100%;
-		min-height: 100%;
-		object-fit: cover;
-		object-position: center;
+		max-width: 50%;
+		max-height: 50%;
+		/* object-fit: cover;
+		object-position: center; */
     }
     
+    section img {
+		max-width: 50%;
+		max-height: 50%;
+		/* object-fit: cover;
+		object-position: center; */
+    }
+
 	/*section > div {
 		display: flex;
 		flex-direction: column;
@@ -236,5 +301,4 @@ figure:nth-of-type(1) {
 		line-height: 1;
 		word-spacing: .5rem;
     } */
-
 }
