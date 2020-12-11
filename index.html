@@ -8,13 +8,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap" rel="stylesheet">    
     <link href="icons/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <title>Document</title>
 </head>
 <body>
     <nav>
-        <a href="">Contacto</a>
-        <a href="">Productos</a>
-        <a href="">SObre</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#productos">Productos</a>
+        <a href="">Blog</a>
     </nav>
 
     <main>
@@ -33,16 +34,16 @@
             </div>
             <div class="intro-prin">
                 <div class="intro-i">
-                    <div><i class="fas fa-globe"></i></div> 
+                    <div><a href="#posicionamiento"><i class="fas fa-globe"></i></a></div> 
                     <div>
-                        <i class="fas fa-cogs"></i>
-                        <i class="fas fa-drafting-compass"></i>
+                        <a href="#funcionalidad"><i class="fas fa-cogs"></i></a>
+                        <a href="#diseño"><i class="fas fa-drafting-compass"></i></a>
                     </div>
                 </div>
                 <div class="intro-a">
-                    <a href="">Posicionamiento</a>
-                    <a href="">Funcionalidad</a>
-                    <a href="">Diseño</a>
+                    <a href="#posicionamiento">Posicionamiento</a>
+                    <a href="#funcionalidad">Funcionalidad</a>
+                    <a href="#diseño">Diseño</a>
                 </div>
             </div>
         </section>
@@ -61,7 +62,7 @@
             </div>
         </figure>
 
-        <section class="block">
+        <section class="block" id="productos">
             <div class="block-content">
                 <h4>Sitio Web</h4>
                 <p>Si deseas que el mundo entero te conozca, lo que tú necesitas es un sitio web. Ahí podrás contarle a todos sobre tus productos y/o servicios y así convencerlos de que eres la mejor opción para ellos. ¡Vamos, no te quedes atrás! Ten tu propio sitio web profesional y enamora a tus clientes.</p>
@@ -70,7 +71,7 @@
         </section>
 
         <div class="click">
-            <a href="">Pide el tuyo</a>
+            <a href="#contacto">Pide el tuyo</a>
         </div>
 
         <div class="sub-encabezado">
@@ -91,7 +92,7 @@
             </div>
         </figure>
 
-        <section class="block">
+        <section class="block" id="posicionamiento">
             <div class="block-content-list">
                 <div><i class="fas fa-globe"></i></div>
                 <h4>Posicionamiento</h4>
@@ -99,7 +100,7 @@
             </div>
         </section>
         
-        <figure class="block">
+        <figure class="block" id="funcionalidad">
             <div class="block-content-list">
                 <div><i class="fas fa-cogs"></i></div>     
                 <h4>Funcionalidad</h4>
@@ -107,7 +108,7 @@
             </div>
         </figure>
 
-        <section class="block">
+        <section class="block" id="diseño">
             <div class="block-content-list">
                 <div><i class="fas fa-drafting-compass"></i></div>
                 <h4>Diseño</h4>
@@ -126,15 +127,31 @@
             
         </figure>
 
-        <section class="block">
+        <section class="block" id="contacto">
             <div class="block-content-list">
-                <h5>Trabajamos 100% remoto. O sea que estamos donde sea que tú nos necesites. No dudes en escribir al siguiente correo electrónico <a href="mailto:yajday@hotmail.com">yajday@hotmail.com</a></h5>
+                <h5>Trabajamos 100% remoto</h5>
+                <p>O sea que estamos donde sea que tú nos necesites. No dudes en escribir por correo o WhatsApp.</a> </p>
+                <p><span>Da Click en cualquier opción:</span></p>
+                <div class="contact-way">
+                    <a href="mailto:yajday@hotmail.com?subject=Pedir%20m%C3%A1s%20informaci%C3%B3n&body=Buenas%20tardes,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20alguno%20de%20los%20productos">
+                        <span>Correo</span>
+                        <i class="far fa-envelope"></i>
+                        <span>yajday@hotmail.com</span> 
+                    </a>
+                    <a href="https://wa.me/5214492201244?text=Buenas%20tardes,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20alguno%20de%20los%20productos">
+                        <span>WhatsApp</span>
+                        <i class="fab fa-whatsapp"></i>
+                        <span>+52 449 220 1244</span> 
+                    </a>
+                </div>
             </div>
         </section>
         
     </main>
     <footer>
-        <h2>Hey</h2>
+        <div>
+            <p>Todod los derechos reservados | 2020</p>
+        </div>
     </footer>
 </body>
 </html>
