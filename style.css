@@ -13,23 +13,54 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(40, 55, 58);
+    background: rgb(105, 111, 116);
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(30, 41, 42);
+    background: rgb(52, 56, 56);
     box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 ::-webkit-scrollbar-track {
-    background: #e1e1e1;
+    background: #cfcece;
     border-radius: 4px;
 }
 
 ::-webkit-scrollbar-track:hover,
 ::-webkit-scrollbar-track:active {
-  background: #d4d4d4;
+  background: #bdbbbb;
+}
+
+/* Progress bar */
+#overlay {
+    position:fixed;
+    z-index:99999;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    background: radial-gradient(50% 50% at 50% 50%, #0e2b46 0%, #041B30 100%);
+    transition: 1s 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 12%;
+}
+
+#progress {
+    font-size: calc(1.3vmin + 0.8vmax);
+    letter-spacing: 3px;
+    text-align:center;
+    color:#e5e5e5;
+    margin-bottom: .9rem;
+}
+
+#progressbar {
+    height: calc(1.3vmin + 0.8vmax);
+    background:#e5e5e5;
+    border-radius: 15px;
+    width: 0%;
 }
 
 /* -- Navegacion -- */
@@ -399,7 +430,7 @@ h4 {
 @media screen and (min-width: 769px) {
     figure:nth-of-type(3) {
 		background: radial-gradient(50% 50% at 50% 50%, #0e2b46 0%, #041B30 100%);
-        color: #c9c9c9;
+        color: #e4e4e4;
     }
 
     section:nth-of-type(4) {
@@ -464,11 +495,17 @@ figure:last-of-type h4{
 }
 
 section:last-of-type {
-    border-radius: 25px 25px 0 0;
-    box-shadow: 0 -6px 6px hsla(0, 0%, 69%, 0.253);
-    margin: -7rem auto 0 auto;
     z-index: 2;
-    width: 80%;
+    background: #031525;
+}
+
+.block-cont {
+    border-radius: 25px 25px;
+    box-shadow: 0 0px 30px hsla(0, 0%, 69%, 0.253);
+    margin: -8rem auto 0 auto;
+    padding: 1.5rem;
+    width: 98%;
+    background-color: #e5e5e5;
 }
 
 h5 {
@@ -521,11 +558,20 @@ h5 {
         border-radius: 0;
         box-shadow: 4px -4px 8px rgba(0,0,0,.4);
         margin: 0 auto 0 50%;
+        background-color: #e5e5e5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
 	figure:last-of-type,
 	section:last-of-type {
 		margin-bottom: 0;
+    }
+
+    .block-cont {
+        margin: 0 auto;
+        box-shadow: none;
     }
     
     .contact-way {
@@ -562,4 +608,10 @@ footer {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+}
+
+@media screen and (min-width: 769px) {
+    footer {
+        min-height: 5vh;
+    }
 }

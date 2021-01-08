@@ -9,13 +9,17 @@
     <link href="icons/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="./favicon.ico">
-    <title>Document</title>
 </head>
 <body>
+    <div id="overlay">
+        <div id="progress">Loading 0%</div>
+        <div id="progressbar"></div>
+    </div>
+
     <nav>
         <a href="#contacto">Contacto</a>
         <a href="#productos">Productos</a>
-        <a href="">Blog</a>
+        <a href="/blog/blog-posicionamiento.html">Blog</a>
     </nav>
 
     <main>
@@ -28,7 +32,7 @@
         <section class="intro">    
             <div>
                 <h1>Desarrollo de Aplicaciones y Sitios Web</h1>
-                <p>Enseñale al mundo tu empresa o negocio a traves de un sitio web, o
+                <p>Enseñale al mundo tu empresa o negocio a través de un sitio web, o
                     soluciona tus problemas mediante una aplicación web hecha a la medida.
                 </p>
             </div>
@@ -104,7 +108,7 @@
             <div class="block-content-list">
                 <div><i class="fas fa-cogs"></i></div>     
                 <h4>Funcionalidad</h4>
-                <p>Tu marca funciona bien, por lo tanto tu sitio web o aplicación también lo deben hacer. Que tu contenido esté disponible las 24 horas los 7 días, sin caidas de sistema. Siendo inductiva en cada tarea para que no te complique la existencia. Funcinando siempre como tu quieres para que puedas <span> relajarte y dejar que la magia se haga sola.</span></p>
+                <p>Tu marca funciona bien, por lo tanto tu aplicación o sitio web también lo debe hacer. Podemos simplificar esas tareas largas y complicadas. Podrás resolverlas con tan solo unos clicks desde la comodidas de tu teléfono. Funcinando siempre como tu quieres para que puedas <span> relajarte y dejar que la magia se haga sola.</span></p>
             </div>
         </figure>
 
@@ -126,23 +130,25 @@
             </div>
             
         </figure>
-
+        
         <section class="block" id="contacto">
-            <div class="block-content-list">
-                <h5>Trabajamos 100% remoto</h5>
-                <p>O sea que estamos donde sea que tú nos necesites. No dudes en escribir por correo o WhatsApp.</a> </p>
-                <p><span>Da Click en cualquier opción:</span></p>
-                <div class="contact-way">
-                    <a href="mailto:yajday@hotmail.com?subject=Pedir%20m%C3%A1s%20informaci%C3%B3n&body=Buenas%20tardes,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20alguno%20de%20los%20productos">
-                        <span>Correo</span>
-                        <i class="far fa-envelope"></i>
-                        <span>yajday@hotmail.com</span> 
-                    </a>
-                    <a href="https://wa.me/5214492201244?text=Buenas%20tardes,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20alguno%20de%20los%20productos">
-                        <span>WhatsApp</span>
-                        <i class="fab fa-whatsapp"></i>
-                        <span>+52 449 220 1244</span> 
-                    </a>
+            <div class="block-cont">
+                <div class="block-content-list">
+                    <h5>Trabajamos 100% remoto</h5>
+                    <p>Estamos donde sea que tú nos necesites. No dudes en escribir por correo o WhatsApp.</a> </p>
+                    <p><span>Da Click en cualquier opción:</span></p>
+                    <div class="contact-way">
+                        <a href="mailto:yajday@hotmail.com?subject=Pedir%20m%C3%A1s%20informaci%C3%B3n&body=Buenas%20tardes,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20alguno%20de%20los%20productos">
+                            <span>Correo</span>
+                            <i class="far fa-envelope"></i>
+                            <span>yajday@hotmail.com</span> 
+                        </a>
+                        <a href="https://wa.me/5214492201244?text=Buenas%20tardes,%20quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20alguno%20de%20los%20productos">
+                            <span>WhatsApp</span>
+                            <i class="fab fa-whatsapp"></i>
+                            <span>+52 449 220 1244</span> 
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -153,5 +159,7 @@
             <p>Todod los derechos reservados | 2020</p>
         </div>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
 </html>
