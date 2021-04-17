@@ -416,8 +416,11 @@ h4 {
 }
 
 .block-content-list div {
-    font-size: calc(2vmin + 3.5vmax);
     text-align: center;
+}
+
+.block-content-list div i {
+    font-size: calc(2vmin + 3.5vmax);
 }
 
 .block-content-list span,
@@ -453,6 +456,14 @@ h4 {
     }
 }
 
+.cristal {
+    background: rgba(75, 75, 75, 0.3);
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 3.0px );
+    border-radius: 25px 25px 0 0;
+    padding: 10%;
+}
+
 .sub-hero {
     margin-top: 20px;
     padding: 0;
@@ -478,20 +489,13 @@ h4 {
     color: #e5e5e5;
     border-radius: 25px 25px 0 0;
     z-index: 1;
-}
-
-.hero-dark {
     min-height: 30vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: rgba(51, 51, 51, 0.685);
-    border-radius: 25px 25px 0 0;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.404);
 }
 
-figure:last-of-type h4{
-    margin-top: -3rem;
+div.options {
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 1rem;
 }
 
 section:last-of-type {
@@ -516,21 +520,35 @@ h5 {
 
 .contact-way {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
 }
 
 .contact-way a {
     display: flex;
+    flex-basis: calc(50% - 1rem);
     flex-direction: column;
     margin-top: 1.5rem;
     font-size: calc(1.1vmin + 1.4vmax);
     text-decoration: none;
+    color: #e5e5e5;
+    font-weight: 500;
+}
+
+.contact-way span {
+    display: flex;
+    flex-direction: column;
+    font-size: calc(1.1vmin + 1.4vmax);
+    text-decoration: none;
+    color: #e5e5e5;
+    font-weight: 500;
 }
 
 .contact-way a i{
     font-size: calc(4vmin + 5vmax);
     font-weight: 100;
     margin: .5rem auto;
+    color: #e5e5e5;
+    font-weight: 300;
 }
 
 @media screen and (min-width: 769px) {
@@ -547,10 +565,10 @@ h5 {
         padding: 0;
         margin-top: 0;
         border-radius: 0;
+        height: 100vh;
     }
 
-    .hero-dark {
-        min-height: 100vh;
+    .cristal {
         border-radius: 0;
     }
 
@@ -574,27 +592,27 @@ h5 {
         box-shadow: none;
     }
     
-    .contact-way {
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
     .contact-way a {
         flex-basis: calc(50% - 2rem);
-        font-size: calc(.8vmin + 1vmax);
+        font-size: calc(5min + 5vmax);
         margin-top: 2rem;
-        transition: 1s;
+        transition: .75s;
         padding: 1rem;
         border-radius: 10px;
     }
 
     .contact-way a:hover {
-        background-color: rgba(54, 54, 54, 0.13);
+        background-color: rgba(39, 39, 39, 0.25);
         transform: scale(1.1);
     }
 
+    .contact-way a span {
+        font-size: calc(1vmin + 1vmax);
+    }
+
+
     .contact-way a i{
-        font-size: calc(3.3vmin + 3.7vmax);
+        font-size: calc(2vmin + 1.5vmax);
         font-weight: 100;
         margin: .5rem auto;
     }
